@@ -1,4 +1,12 @@
 <p align="center">
+
+### Versão 1.0.1
+<p>
+A cada estudo nova caracteristica estudada e dentro do possível, estarei atualizando as versões e implementado novas caracteristicas, para melhor ser utilizada sem a necessidade de re-instalação e longas correções.
+<br/>
+With each study, a new feature is studied and as far as possible, I will be updating the versions and implementing new features, to better be used without the need for re-installation and long corrections.
+</p>
+
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/wadyntecno/LaravelBreezeLirewire/blob/dev/logoidentidade.jpg" width="500" alt="Laravel Logo"></a></p>
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
