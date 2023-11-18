@@ -1,22 +1,30 @@
 <p align="center">
 
-## Versão 1.0.1
+# Docker whit sail + Laravel + Brreze + Lirewire
+
+## Versão 1.0.2
 
 <p>
 A cada estudo uma nova informação ou extensão será inserida, estarei atualizando as versões e implementado novas caracteristicas, para melhor ser utilizada sem a necessidade de uma longa re-instalação e correção.
 </p>
-
-<ul>
-<li>Breeze</li>
-<li>Lirewire</li>
-<li>Laravel Excel</li>
-<li>Laravel Horizon (jobs)</li>
-<ul>
-
 #### In English
 <p>
 With each study, new information or extension will be inserted, I will be updating the versions and implementing new features, to be better used without the need for long re-installation and correction.
 </p>
+
+
+<ul>
+<li>Breeze</li>
+<li>Lirewire</li>
+<li>Laravel Mysql</li>
+<li>Laravel Excel</li>
+<li>Laravel Horizon (jobs)</li>
+<li>Laravel Mailpit</li>
+<li>Laravel Redis</li>
+<li>Laravel Meilisearch</li>
+<li>AlpineJS</li>
+<li>Tailwindcss</li>
+<ul>
 
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/wadyntecno/LaravelBreezeLirewire/blob/dev/logoidentidade.jpg" width="500" alt="Laravel Logo"></a></p>
 <p align="center">
