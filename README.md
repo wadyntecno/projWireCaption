@@ -2,10 +2,16 @@
 
 ## Versão 1.0.1
 
-
 <p>
 A cada estudo uma nova informação ou extensão será inserida, estarei atualizando as versões e implementado novas caracteristicas, para melhor ser utilizada sem a necessidade de uma longa re-instalação e correção.
 </p>
+
+<ul>
+<li>Breeze</li>
+<li>Lirewire</li>
+<li>Laravel Excel</li>
+<li>Laravel Horizon (jobs)</li>
+<ul>
 
 #### In English
 <p>
