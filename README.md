@@ -1,6 +1,6 @@
 <p align="center">
 
-# Docker whit sail + Laravel + Brreze + Lirewire
+# Docker with sail + Laravel + Brreze + Lirewire
 
 ## Versão 1.0.2
 
