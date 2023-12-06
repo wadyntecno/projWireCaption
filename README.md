@@ -2,7 +2,7 @@
 
 # Docker with sail + Laravel + Breze + Lirewire
 
-## Versão 1.0.2
+## Versão 1.0.3
 
 <p>
 A cada estudo uma nova informação ou extensão será inserida, estarei atualizando as versões e implementado novas caracteristicas, para melhor ser utilizada sem a necessidade de uma longa re-instalação e correção.
@@ -20,6 +20,7 @@ With each study, new information or extension will be inserted, I will be updati
 <li>Laravel Excel</li>
 <li>Laravel Horizon (jobs)</li>
 <li>Laravel Mailpit</li>
+<li>Laravel Minio</li>
 <li>Laravel Redis</li>
 <li>Laravel Meilisearch</li>
 <li>AlpineJS</li>
