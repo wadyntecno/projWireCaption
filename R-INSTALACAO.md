@@ -2,22 +2,22 @@
 ## Instalação
 
 #### Setup configuration:
-<p> 
+<code> 
 
 composer install
 
-</p>
+</code>
 
 #### Generate application key:
-<p>
+<code>
 
 cp .env.example .env
 
-</p>
+</code>
 
 ####
 ##### exemplo escrito dentro no BD condicionar para esta configuração
-<p>
+<code>
 
 DB_CONNECTION=mysql
 DB_HOST=mysql
@@ -26,10 +26,10 @@ DB_DATABASE=olw-1dep
 DB_USERNAME=sail
 DB_PASSWORD=password
 
-</p>
+</code>
 
 #### VITE - não funciona (colocar no vite.config.js)
-<p>
+<code>
 
 server: {
         hmr: {
@@ -38,22 +38,22 @@ server: {
     },
 
 
-</p>
+</code>
 
 #### colocar no package.json
-<p>  "dev": "vite --host localhost",  </p>
+<code>  "dev": "vite --host localhost",  </code>
 
 
 #### INSTALAR O NPM
-<p> npm install </p>
+<code> npm install </code>
 
 
 ####
-<p>
+<code>
 
-</p>
+</code>
 
 ####
-<p>
+<code>
 
-</p>
+</code>
