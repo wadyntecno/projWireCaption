@@ -27,6 +27,31 @@ With each study, new information or extension will be inserted, I will be updati
 <li>Tailwindcss</li>
 <ul>
 
+## instalação
+
+#### Setup configuration:
+<code>
+composer install
+</code>
+
+#### Generate application key:
+<code>
+cp .env.example .env
+</code>
+
+####
+<code>
+
+</code>
+####
+<code>
+
+</code>
+####
+<code>
+
+</code>
+
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/wadyntecno/LaravelBreezeLirewire/blob/dev/logoidentidade.jpg" width="500" alt="Laravel Logo"></a></p>
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
