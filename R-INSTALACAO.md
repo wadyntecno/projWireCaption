@@ -2,7 +2,13 @@
 
 ## Procedimento na instalação deste projeto
 
-<code>git clone https://github.com/wadyntecno/LaravelBreezeLirewire.git <renomearoprojeto> </code>
+<code>git clone https://github.com/wadyntecno/LaravelBreezeLirewire.git "renomearoprojeto" && "renomearoprojeto"  </code>
+
+#### Generate application key:
+<code> cp .env.example .env </code>
+
+#### trocar o nome do BANCO DE DADOS no projeto 
+<p>DB_DATABASE="mesmoNomeDoProjeto"</p>
 
 #### Setup configuration:
 <code>  composer install </code>
@@ -16,11 +22,6 @@
     laravelsail/php82-composer:latest \
     composer install --ignore-platform-reqs </code>
 
-#### Generate application key:
-<code> cp .env.example .env </code>
-
-#### trocar o nome do BANCO DE DADOS no projeto 
-<p>DB_DATABASE=<mesmoNomeDoProjeto></p>
 
 ####
 ##### exemplo escrito dentro no BD condicionar para esta configuração
