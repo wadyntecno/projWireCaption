@@ -12,9 +12,11 @@ A cada estudo uma nova informação ou extensão será inserida, estarei atualiz
 With each study, new information or extension will be inserted, I will be updating the versions and implementing new features, to be better used without the need for long re-installation and correction.
 </p>
 
-## Instalação do projeto
-<a href="">Clicar aqui</a>
+## Como proceder na instalação deste projeto
+<a href="https://github.com/wadyntecno/LaravelBreezeLirewire/blob/main/R-INSTALACAO.md">Clicar aqui</a>
 
+
+## Ferramentas instaladas
 <ul>
 <li>Breeze</li>
 <li>Lirewire</li>
