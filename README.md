@@ -12,6 +12,8 @@ A cada estudo uma nova informação ou extensão será inserida, estarei atualiz
 With each study, new information or extension will be inserted, I will be updating the versions and implementing new features, to be better used without the need for long re-installation and correction.
 </p>
 
+## Instalação do projeto
+<a href="">Clicar aqui</a>
 
 <ul>
 <li>Breeze</li>
@@ -27,30 +29,6 @@ With each study, new information or extension will be inserted, I will be updati
 <li>Tailwindcss</li>
 <ul>
 
-## instalação
-
-#### Setup configuration:
-<code>
-composer install
-</code>
-
-#### Generate application key:
-<code>
-cp .env.example .env
-</code>
-
-####
-<code>
-
-</code>
-####
-<code>
-
-</code>
-####
-<code>
-
-</code>
 
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/wadyntecno/LaravelBreezeLirewire/blob/dev/logoidentidade.jpg" width="500" alt="Laravel Logo"></a></p>
 <p align="center">
