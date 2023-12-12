@@ -22,7 +22,8 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .imgSlogan{
+
+        .imgSlogan {
             background:
                 url("{{ Vite::imgurl('rodovia01.jpg') }}");
             background-repeat: no-repeat;
@@ -65,12 +66,14 @@
          bg-black/60  text-white z-10 shadow-lg">
             <div class="flex flex-row ">
                 <img src="{{ Vite::imgurl('logo2.jpg') }}" alt="Negócios Promissores" title="Negócios Promissores"
-                    class="w-[45px] h-auto ">
+                    class="w-[45px] h-auto rounded-md">
             </div>
             <div class="flex flex-row xs:hidden pt-2">
                 <a href="#home" class="px-4">Home</a> |
-                <a href="#project" class="px-4">Projects</a> |
-                <a href="#contact" class="px-4">Contact</a>
+                <a href="#project" class="px-4">Projetos</a> |
+                <a href="#plans" class="px-4">Planos</a> |
+                <a href="#contact" class="px-4">Contato</a>
+
             </div>
 
             <div class="flex flex-row pr-2 pt-2">
@@ -82,35 +85,44 @@
                         <a href="{{ route('login') }}"
                             class="font-semibold text-white hover:text-gray-300 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log
                             in</a>
-                           
-                        @if (Route::has('register') )
+
+                        @if (Route::has('register'))
                             <a href="{{ route('register') }}"
                                 class="ml-4 font-semibold text-white hover:text-gray-300 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                         @endif
                     @endauth
                 @endif
 
-                
+
             </div>
         </div>
-        <div class="p-6 pt-0 flex flex-col w-full overflow-y-auto " >
-            <div id="home"  class="  w-full imgSlogan ">
-                <div class="flex flex-col  h-[350px] lg:h-[600px]">
-                    <div class="mt-10 ml-4 lg:w-2/3 p-8 text-3xl bg-black/50 text-white rounded-lg">Desperte a Presença Online do Seu Negócio: 
+        <div class="p-6 pt-0 flex flex-col w-full overflow-y-auto ">
+            <div id="home" class="  w-full imgSlogan ">
+                <div class="flex flex-col  h-[350px] lg:h-[540px]">
+                    <div class="mt-10 ml-4 lg:w-2/3 p-8 text-2xl bg-black/50 text-white rounded-lg">Desperte a Presença
+                        Online do Seu Negócio:
                         <br><span class="text-lg">Invista em um Site e Alcance Novos Horizontes!</span>
                     </div>
                     <div class=" flex flex-row justify-end w-full">
-                        <div class="mt-10 ml-4  text-right mr-0 p-8 text-5xl bg-black/50 text-white rounded-lg">
-                            Seu Sucesso Começa Agora: 
-                            <br><span class="text-2xl">Abrace a Mudança e Garanta Sua Relevância Online com um Novo Site!</span>
-                            <p class="text-lg">O mundo dos negócios está em constante evolução, e a presença online é mais crucial do que nunca. Seja para expandir seu alcance, aumentar suas vendas ou fortalecer sua marca, a necessidade de um site atualizado é inegável. Sua empresa merece estar na vanguarda da internet, cativando clientes e destacando-se da concorrência. Com um novo site, você não apenas se adapta às demandas do mercado atual, mas também cria uma plataforma dinâmica para interagir com seu público-alvo, transmitir sua mensagem e gerar resultados impactantes. Não deixe para amanhã o que pode impulsionar seu sucesso hoje. Invista em um novo site e prepare-se para uma jornada de conquistas e crescimento contínuo!</p>
+                        <div class="mt-10 ml-4  text-right mr-0 p-8 text-3xl bg-black/50 text-white rounded-lg">
+                            Seu Sucesso Começa Agora:
+                            <br><span class="text-xl">Abrace a Mudança e Garanta Sua Relevância Online com um Novo
+                                Site!</span>
+                            <p class="text-lg">O mundo dos negócios está em constante evolução, e a presença online é
+                                mais crucial do que nunca. Seja para expandir seu alcance, aumentar suas vendas ou
+                                fortalecer sua marca, a necessidade de um site atualizado é inegável. Sua empresa merece
+                                estar na vanguarda da internet, cativando clientes e destacando-se da concorrência. Com
+                                um novo site, você não apenas se adapta às demandas do mercado atual, mas também cria
+                                uma plataforma dinâmica para interagir com seu público-alvo, transmitir sua mensagem e
+                                gerar resultados impactantes. Não deixe para amanhã o que pode impulsionar seu sucesso
+                                hoje. Invista em um novo site e prepare-se para uma jornada de conquistas e crescimento
+                                contínuo!</p>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
-            <div
-                class="px-4 py-6 flex flex-col md:grid md:grid-cols-4 md:items-stretch  bg-white/30 rounded-md">
+            <div class="px-4 py-6 flex flex-col md:grid md:grid-cols-4 md:items-stretch  bg-white/30 rounded-md">
                 <div class="p-3 flex flex-col items-start   ">
                     <div class=" flex flex-row items-start ">
                         <div class="pr-1">
@@ -163,11 +175,9 @@
                     </div>
                     <div>
                         <div class="text-sm">A construção técnica do site é vital para sua eficiência. Isso envolve
-                            a
-                            codificação, a escolha adequada de tecnologias, o gerenciamento de banco de dados e a
+                            a codificação, a escolha adequada de tecnologias, o gerenciamento de banco de dados e a
                             otimização do desempenho. Um site rápido, seguro e confiável é fundamental para manter
-                            os
-                            visitantes engajados.</div>
+                            os visitantes engajados.</div>
                     </div>
                 </div>
 
@@ -195,7 +205,7 @@
             </div>
 
             <div class="px-4 flex flex-row w-full pt-4 x-transition">
-                <h3 id="project" class="text-2xl font-bold">projects</h3>
+                <h3 id="project" class="text-2xl font-bold">Projetos</h3>
             </div>
 
             <div class="px-4 flex flex-row w-full justify-between gap-4 pt-4">
@@ -216,12 +226,90 @@
             </div>
 
             <div class="px-4 flex flex-row w-full pt-4 x-transition">
-                <h3 id="contact" class="text-2xl font-bold">Contact</h3>
+                <h3 class="text-2xl font-bold">Planos</h3>
+            </div>
+            <div id="plans" class="flex flex-row w-full gap-6 p-4 ">
+                <div class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
+                hover:shadow-white/70 shadow-lg
+                text-center rounded-xl">
+                    <div class=" w-full flex flex-col ">
+                        <div class="text-3xl font-bold py-3 bg-sky-900 text-white rounded-t-xl"> Plano Essencial</div>
+                        <div class="flex flex-col bg-white/50 text-left p-3 pl-8 rounded-b-xl">
+                            <ul class="list-decimal ">
+                                <li> Design responsivo e moderno para até 5 páginas</li>
+                                <li> Integração básica com redes sociais </li>
+                                <li> Otimização básica para mecanismos de busca (SEO)</li>
+                                <li> Hospedagem por 1 ano</li>
+                                <li> Suporte técnico por e-mail durante 30 dias após o lançamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="py-2 text-3xl text-indigo-950 font-black">R$ 4.500,00</div>
+                        <div class=" cursor-pointer rounded-xl
+                        bg-orange-700 py-2 w-full h-11 text-lg font-bold text-green-100
+                         hover:bg-green-800 hover:text-white ">CONTRATE AGORA</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
+                hover:shadow-white/70 shadow-lg
+                text-center rounded-xl">
+                    <div class=" w-full flex flex-col ">
+                        <div class="text-3xl font-bold py-3 bg-sky-900 text-white rounded-t-xl"> Plano Profissional</div>
+                        <div class="flex flex-col bg-white/50 text-left p-3 pl-8 rounded-b-xl">
+                            <ul class="list-decimal ">
+                                <li> Design personalizado para até 10 páginas</li>
+                                <li> Integração avançada com redes sociais e plugins </li>
+                                <li> Blog ou seção de notícias</li>
+                                <li> Otimização avançada para mecanismos de busca (SEO)</li>
+                                <li> Formulários avançados e até 2 funcionalidades extras (ex: galeria de imagens,
+                                    calendário)</li>
+                                <li> Hospedagem por 1 ano</li>
+                                <li> Suporte técnico por e-mail durante 60 dias após o lançamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="py-2 text-3xl text-indigo-950 font-black">R$ 4.500,00</div>
+                        <div class=" cursor-pointer rounded-xl
+                        bg-orange-700 py-2 w-full h-11 text-lg font-bold text-green-100
+                         hover:bg-green-800 hover:text-white ">CONTRATE AGORA</div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
+                  hover:shadow-white/70 shadow-lg
+                text-center rounded-xl">
+                    <div class=" w-full flex flex-col ">
+                        <div class="text-3xl font-bold py-3 bg-sky-900 text-white rounded-t-xl"> Plano Plus</div>
+                        <div class="flex flex-col bg-white/50 text-left p-3 pl-8 rounded-b-xl">
+                            <ul class="list-decimal leading-5">
+                                <li> Design responsivo e moderno para até 15 páginas</li>
+                                <li> Integração completa com redes sociais, e-commerce e/ou outras plataformas </li>
+                                <li> Blog dinâmico com gerenciamento de conteúdo</li>
+                                <li> SEO avançado, análise de dados e relatórios periódicos</li>
+                                <li> Formulários avançados, funcionalidades customizadas (ex: chat online, reservas)
+                                </li>
+                                <li> Hospedagem por 1 ano com certificado SSL</li>
+                                <li> Suporte técnico por e-mail durante 90 dias após o lançamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="py-2 text-3xl text-indigo-950 font-black">R$ 4.500,00</div>
+                        <div class=" cursor-pointer rounded-xl
+                        bg-orange-700 py-2 w-full h-11 text-lg font-bold text-green-100
+                         hover:bg-green-800 hover:text-white ">CONTRATE AGORA</div>
+                    </div>
+                </div>
             </div>
             <div class="px-4 flex flex-row w-full pt-4 x-transition">
                 <br>
                 <hr>
-                <h3 id="contact" class="text-2xl font-bold">Contact</h3>
+                <h3 id="contact" class="text-2xl font-bold">Contato</h3>
                 <br><br><br><br><br><br><br><br><br><br><br>
                 <br>
                 <hr>
