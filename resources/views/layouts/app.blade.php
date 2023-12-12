@@ -27,6 +27,7 @@
                 </header>
             @endif
 
+<h3 class="p-6 text-xl">Livewire + Filament</h3>
             <!-- Page Content -->
             <main>
                 {{ $slot }}
