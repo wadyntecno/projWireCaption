@@ -60,19 +60,13 @@
 </head>
 
 <body class="antialiased bg-gray-50">
-    <div class="flex flex-col w-full h-full bottom-0 
-    fixed bg-white imagemFuncoBemvindos">
+    <div x-data="{ plansX: false, scrollAtTop: true }" class=" flex flex-col w-full h-full bottom-0 
+    fixed bg-white imagemFuncoBemvindos ">
         <div class="px-6 py-6 flex flex-row w-full justify-between  
          bg-black/60  text-white z-10 shadow-lg">
             <div class="flex flex-row ">
-                <img src="{{ Vite::imgurl('logo2.jpg') }}" alt="Negócios Promissores" title="Negócios Promissores"
-                    class="w-[45px] h-auto rounded-md">
-            </div>
-            <div class="flex flex-row xs:hidden pt-2">
-                <a href="#home" class="px-4">Home</a> |
-                <a href="#project" class="px-4">Projetos</a> |
-                <a href="#plans" class="px-4">Planos</a> |
-                <a href="#contact" class="px-4">Contato</a>
+                @livewire('main.logo-first', ['active_css' => 'h-auto rounded-sm z-4 fixed ml-4 w-[80px]'])
+                {{-- <livewire:main.logo-first :active_css="ml-4 w-[80px]" /> --}}
 
             </div>
 
@@ -96,7 +90,7 @@
 
             </div>
         </div>
-        <div class="p-6 pt-0 flex flex-col w-full overflow-y-auto ">
+        <div id="advantages" class="p-6 pt-0 flex flex-col w-full overflow-y-auto ">
             <div id="home" class="  w-full imgSlogan ">
                 <div class="flex flex-col  h-[350px] lg:h-[540px]">
                     <div class="mt-10 ml-4 lg:w-2/3 p-8 text-2xl bg-black/50 text-white rounded-lg">Desperte a Presença
@@ -225,11 +219,13 @@
 
             </div>
 
-            <div class="px-4 flex flex-row w-full pt-4 x-transition">
+            <div class="px-4 flex flex-col w-full pt-4 x-transition">
                 <h3 class="text-2xl font-bold">Planos</h3>
+                <div id="plans"></div>
             </div>
-            <div id="plans" class="flex flex-row w-full gap-6 p-4 ">
-                <div class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
+            <div x-show="plansX" class="flex flex-row w-full gap-6 p-4 ">
+                <div
+                    class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
                 hover:shadow-white/70 shadow-lg
                 text-center rounded-xl">
                     <div class=" w-full flex flex-col ">
@@ -246,17 +242,21 @@
                     </div>
                     <div>
                         <div class="py-2 text-3xl text-indigo-950 font-black">R$ 4.500,00</div>
-                        <div class=" cursor-pointer rounded-xl
+                        <div
+                            class=" cursor-pointer rounded-xl
                         bg-orange-700 py-2 w-full h-11 text-lg font-bold text-green-100
-                         hover:bg-green-800 hover:text-white ">CONTRATE AGORA</div>
+                         hover:bg-green-800 hover:text-white ">
+                            CONTRATE AGORA</div>
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
+                <div
+                    class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
                 hover:shadow-white/70 shadow-lg
                 text-center rounded-xl">
                     <div class=" w-full flex flex-col ">
-                        <div class="text-3xl font-bold py-3 bg-sky-900 text-white rounded-t-xl"> Plano Profissional</div>
+                        <div class="text-3xl font-bold py-3 bg-sky-900 text-white rounded-t-xl"> Plano Profissional
+                        </div>
                         <div class="flex flex-col bg-white/50 text-left p-3 pl-8 rounded-b-xl">
                             <ul class="list-decimal ">
                                 <li> Design personalizado para até 10 páginas</li>
@@ -272,15 +272,18 @@
                     </div>
                     <div>
                         <div class="py-2 text-3xl text-indigo-950 font-black">R$ 4.500,00</div>
-                        <div class=" cursor-pointer rounded-xl
+                        <div
+                            class=" cursor-pointer rounded-xl
                         bg-orange-700 py-2 w-full h-11 text-lg font-bold text-green-100
-                         hover:bg-green-800 hover:text-white ">CONTRATE AGORA</div>
+                         hover:bg-green-800 hover:text-white ">
+                            CONTRATE AGORA</div>
                     </div>
                 </div>
 
 
 
-                <div class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
+                <div
+                    class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
                   hover:shadow-white/70 shadow-lg
                 text-center rounded-xl">
                     <div class=" w-full flex flex-col ">
@@ -300,9 +303,11 @@
                     </div>
                     <div>
                         <div class="py-2 text-3xl text-indigo-950 font-black">R$ 4.500,00</div>
-                        <div class=" cursor-pointer rounded-xl
+                        <div
+                            class=" cursor-pointer rounded-xl
                         bg-orange-700 py-2 w-full h-11 text-lg font-bold text-green-100
-                         hover:bg-green-800 hover:text-white ">CONTRATE AGORA</div>
+                         hover:bg-green-800 hover:text-white ">
+                            CONTRATE AGORA</div>
                     </div>
                 </div>
             </div>
@@ -337,44 +342,29 @@
             </div>
         </div>
 
+        <div>
+            @livewire('main.logo-first')
+
+        </div>
 
     </div>
-    <button id="scrollButton" class="w-full h-4 bg-gray-200"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
-        </svg>
-    </button>
 
+    @livewireScripts
     <script>
-        // JavaScript para el scroll suave dentro de la div
-        const scrollableDiv = document.getElementById('scrollableDiv');
-        const scrollButton = document.getElementById('scrollButton');
-
-        // Mostrar el botón después de desplazarse cierta distancia dentro de la div
-        scrollableDiv.addEventListener('scroll', () => {
-            if (scrollableDiv.scrollTop > 300) {
-                scrollButton.style.display = 'block';
-            } else {
-                scrollButton.style.display = 'none';
-            }
-        });
-
-        // Función para realizar el scroll suave dentro de la div
-        function scrollToTop() {
-            const scrollDuration = 1000; // Duración del scroll en milisegundos
-            const scrollStep = -scrollableDiv.scrollTop / (scrollDuration / 15);
-
-            const scrollInterval = setInterval(() => {
-                if (scrollableDiv.scrollTop !== 0) {
-                    scrollableDiv.scrollBy(0, scrollStep);
-                } else {
-                    clearInterval(scrollInterval);
-                }
-            }, 15);
+        function scrollToAnchor(hash) {
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top + 100
+            }, 200, function() {
+                //  window.location.hash = hash;
+            });
         }
 
-        // Evento click para el botón de scroll
-        scrollButton.addEventListener('click', scrollToTop);
+
+
+        $('#plans2').on('click', function() {
+            console.log('plans2 funciona');
+            scrollToAnchor('plans');
+        })
     </script>
 
 </body>
