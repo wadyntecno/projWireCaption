@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Main\BemVindo;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +20,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('bemvindo_a');
-});
+// Route::get('/', function () {
+//     return view('bemvindo_a');
+// });
+
+Route::get('/', [BemVindo::class, 'index'])->name('bemvindo');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>
-        Negócios Promissores</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    @livewireStyles
     <!-- Styles -->
     <style>
         .imagemFuncoBemvindos {
@@ -63,12 +62,16 @@
     <div x-data="{ plansX: false, scrollAtTop: true }" class=" flex flex-col w-full h-full bottom-0 
     fixed bg-white imagemFuncoBemvindos ">
         <div class="px-6 py-6 flex flex-row w-full justify-between  
-         bg-black/60  text-white z-10 shadow-lg">
+         bg-black/60  text-white z-10 shadow-black/60 shadow-lg ">
             <div class="flex flex-row ">
-                @livewire('main.logo-first', ['active_css' => 'h-auto rounded-sm z-4 fixed ml-4 w-[80px]'])
-                {{-- <livewire:main.logo-first :active_css="ml-4 w-[80px]" /> --}}
-
+                @livewire('main.logo-first', ['active_css' => 'z-4 fixed ml-4 w-[80px] hover:shadow-black/60 hover:shadow-lg hover:opacity-90 '])
             </div>
+
+            @livewire('main.menu-first', [
+                'div_css' => 'flex flex-row pt-2',
+                'ul_css' => '',
+                'active_css' => ''
+            ])
 
             <div class="flex flex-row pr-2 pt-2">
                 @if (Route::has('login'))
@@ -90,8 +93,8 @@
 
             </div>
         </div>
-        <div id="advantages" class="p-6 pt-0 flex flex-col w-full overflow-y-auto ">
-            <div id="home" class="  w-full imgSlogan ">
+        <div id="advantages" class=" px-6 py-0 flex flex-col w-full overflow-y-auto ">
+            <div id="home" class="hidden w-full imgSlogan ">
                 <div class="flex flex-col  h-[350px] lg:h-[540px]">
                     <div class="mt-10 ml-4 lg:w-2/3 p-8 text-2xl bg-black/50 text-white rounded-lg">Desperte a Presença
                         Online do Seu Negócio:
@@ -116,8 +119,8 @@
 
                 </div>
             </div>
-            <div class="px-4 py-6 flex flex-col md:grid md:grid-cols-4 md:items-stretch  bg-white/30 rounded-md">
-                <div class="p-3 flex flex-col items-start   ">
+            <div class=" px-4 py-6 flex flex-col md:grid md:grid-cols-4 md:items-stretch  bg-white/30 rounded-md">
+                <div class=" hidden p-3 flex flex-col items-start   ">
                     <div class=" flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -136,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="p-3 flex flex-col items-start  md:border-l-2 ">
+                <div class=" hidden p-3 flex flex-col items-start  md:border-l-2 ">
                     <div class=" flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -156,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="p-3 flex flex-col items-start md:border-l-2 ">
+                <div class=" hidden p-3 flex flex-col items-start md:border-l-2 ">
                     <div class="flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -175,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="p-3 flex flex-col items-start  md:border-l-2 ">
+                <div class=" hidden p-3 flex flex-col items-start  md:border-l-2 ">
                     <div class="flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -202,7 +205,7 @@
                 <h3 id="project" class="text-2xl font-bold">Projetos</h3>
             </div>
 
-            <div class="px-4 flex flex-row w-full justify-between gap-4 pt-4">
+            <div class="hidden px-4 flex flex-row w-full justify-between gap-4 pt-4">
 
                 <div class="flex flex-col  ">
                     <div>
@@ -223,7 +226,7 @@
                 <h3 class="text-2xl font-bold">Planos</h3>
                 <div id="plans"></div>
             </div>
-            <div x-show="plansX" class="flex flex-row w-full gap-6 p-4 ">
+            <div x-show="plansX" class="hidden flex flex-row w-full gap-6 p-4 ">
                 <div
                     class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
                 hover:shadow-white/70 shadow-lg
@@ -315,57 +318,68 @@
                 <br>
                 <hr>
                 <h3 id="contact" class="text-2xl font-bold">Contato</h3>
-                <br><br><br><br><br><br><br><br><br><br><br>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
-                <br>
-                <hr>
+                <div>
+                    <form action="">
+                    </form>
+                </div>
+            </div>
 
+            <div class="px-12 flex flex-row  justify-center w-full pb-8 pt-12 bg-white/50 gap-24">
+                <div class="flex flex-col  items-start gap-2">
+                    <div class="flex flex-row justify-center">
+                        @livewire('main.logo-first', ['active_css' => 'w-[120px] hover:shadow-black/60 hover:shadow-lg hover:opacity-90 '])
+                    </div>
+                    <div class="text-md font-bold text-sky-800 pb-3">{{ config('app.name') }}</div>
+                    <div class="flex flex-col items-start text-md">
+                        <div class="text-sm font-italic" >E-mail:</div>
+                        {{ config('app.emailcontato') }}  </div>
+                    <div class="flex flex-col items-start p-0">
+                        <div class="text-sm font-italic" >Whatsapp:</div> 
+                        {{ config('app.celularcontato') }}</div>
+                </div>
+                
+                <div class="flex flex-col items-start ">
+                    <div class="text-2xl font-bold text-sky-900 pb-3">Serviços</div>
+                    <div>
+                        <ul class="list-disc">
+                            <li>SEO</li>
+                            <li>Criação</li>
+                            <li>Marketing</li>
+                            <li>Manutenção</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start">Serviços</div>
+            </div>
+            <div>
+                
             </div>
         </div>
 
-        <div>
-            @livewire('main.logo-first')
-
+        <div class="px-4 flex flex-row justify-center w-full py-1 font-black text-xs text-gray-900 bg-black/20 ">
+            {{ config('app.name') }}  - Copyright <span>
+                
+            </span> 2022
         </div>
-
     </div>
 
-    @livewireScripts
     <script>
         function scrollToAnchor(hash) {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top + 100
             }, 200, function() {
-                //  window.location.hash = hash;
+                window.location.hash = hash;
             });
         }
 
-
-
-        $('#plans2').on('click', function() {
+        $('#plans').on('click', function() {
             console.log('plans2 funciona');
             scrollToAnchor('plans');
         })
     </script>
+    @livewireScripts
 
 </body>
 

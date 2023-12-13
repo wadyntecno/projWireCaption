@@ -11,14 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('menus', function (Blueprint $table) {
+        Schema::create('company_phones', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('description')->nullable();
-            $table->string('guid');
-            $table->boolean('style');
-            $table->boolean('status');
-            $table->softDeletes($column = 'deleted_at', $precision = 0);
+            $table->foreignId('company_id')->constrained();
+            $table->enum('type', [ 'casa', 'celular', 'residencia', 'recado', 'outro']);
+            $table->string('phone');
             $table->timestamps();
         });
     }
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('menus');
+        Schema::dropIfExists('company_phones');
     }
 };
