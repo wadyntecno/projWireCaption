@@ -1,0 +1,26 @@
+.svg1 {
+    color: rgba(0, 80, 146, 0.727);
+}
+
+.svg2 {
+    color: rgba(213, 96, 0, 0.727);
+}
+
+.svg3 {
+    color: rgba(26, 112, 0, 0.727);
+}
+
+#scrollButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 40px;
+}

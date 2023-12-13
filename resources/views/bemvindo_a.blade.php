@@ -15,45 +15,16 @@
     <!-- Styles -->
     <style>
         .imagemFuncoBemvindos {
-            background:
-                linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)),
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)),
                 url("{{ Vite::imgurl('rodovia01.jpg') }}");
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         .imgSlogan {
-            background:
-                url("{{ Vite::imgurl('rodovia01.jpg') }}");
+            background: url("{{ Vite::imgurl('rodovia01.jpg') }}");
             background-repeat: no-repeat;
             background-size: cover;
-        }
-
-        .svg1 {
-            color: rgba(0, 80, 146, 0.727);
-        }
-
-        .svg2 {
-            color: rgba(213, 96, 0, 0.727);
-        }
-
-        .svg3 {
-            color: rgba(26, 112, 0, 0.727);
-        }
-
-        #scrollButton {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            display: none;
-            width: 50px;
-            height: 40px;
         }
     </style>
 </head>
@@ -61,7 +32,8 @@
 <body class="antialiased bg-gray-50">
     <div x-data="{ plansX: false, scrollAtTop: true }" class=" flex flex-col w-full h-full bottom-0 
     fixed bg-white imagemFuncoBemvindos ">
-        <div class="px-6 py-6 flex flex-row w-full justify-between  
+        <div
+            class="px-6 py-6 flex flex-row w-full justify-between  
          bg-black/60  text-white z-10 shadow-black/60 shadow-lg ">
             <div class="flex flex-row ">
                 @livewire('main.logo-first', ['active_css' => 'z-4 fixed ml-4 w-[80px] hover:shadow-black/60 hover:shadow-lg hover:opacity-90 '])
@@ -70,7 +42,7 @@
             @livewire('main.menu-first', [
                 'div_css' => 'flex flex-row pt-2',
                 'ul_css' => '',
-                'active_css' => ''
+                'active_css' => '',
             ])
 
             <div class="flex flex-row pr-2 pt-2">
@@ -93,19 +65,21 @@
 
             </div>
         </div>
-        <div id="advantages" class=" px-6 py-0 flex flex-col w-full overflow-y-auto ">
-            <div id="home" class="hidden w-full imgSlogan ">
-                <div class="flex flex-col  h-[350px] lg:h-[540px]">
-                    <div class="mt-10 ml-4 lg:w-2/3 p-8 text-2xl bg-black/50 text-white rounded-lg">Desperte a Presença
-                        Online do Seu Negócio:
-                        <br><span class="text-lg">Invista em um Site e Alcance Novos Horizontes!</span>
+        <div id="advantages" class=" md:px-6 py-0 flex flex-col w-full overflow-y-auto ">
+            <div id="home" class="hidden w-full imgSlogan px-4 md:px-0">
+                <div class="flex flex-col  h-[360px] md:h-[540px]">
+                    <div class="mt-10 md:ml-4 lg:w-2/3 p-8 text-xl md:text-2xl 
+                    bg-black/50 text-white rounded-lg">
+                    Desperte Seu Negócio Online:
+                        <br><span class="text-base md:text-lg">Invista em um Site e Alcance Novos Horizontes!</span>
                     </div>
                     <div class=" flex flex-row justify-end w-full">
-                        <div class="mt-10 ml-4  text-right mr-0 p-8 text-3xl bg-black/50 text-white rounded-lg">
+                        <div class="mt-4 md:mt-10 ml-4 text-right mr-0 p-4  md:p-8 
+                        text-xl md:text-3xl bg-black/50 text-white rounded-lg">
                             Seu Sucesso Começa Agora:
-                            <br><span class="text-xl">Abrace a Mudança e Garanta Sua Relevância Online com um Novo
+                            <br><span class="text-base md:text-xl">Abrace a Mudança e Garanta Sua Relevância Online com um Novo
                                 Site!</span>
-                            <p class="text-lg">O mundo dos negócios está em constante evolução, e a presença online é
+                            <p class="hidden md:block text-lg">O mundo dos negócios está em constante evolução, e a presença online é
                                 mais crucial do que nunca. Seja para expandir seu alcance, aumentar suas vendas ou
                                 fortalecer sua marca, a necessidade de um site atualizado é inegável. Sua empresa merece
                                 estar na vanguarda da internet, cativando clientes e destacando-se da concorrência. Com
@@ -324,44 +298,72 @@
                 </div>
             </div>
 
-            <div class="px-12 flex flex-row  justify-center w-full pb-8 pt-12 bg-white/50 gap-24">
-                <div class="flex flex-col  items-start gap-2">
-                    <div class="flex flex-row justify-center">
-                        @livewire('main.logo-first', ['active_css' => 'w-[120px] hover:shadow-black/60 hover:shadow-lg hover:opacity-90 '])
+            <div
+                class="px-4 md:px-12 flex flex-col lg:flex-row justify-center 
+            w-full pb-8 pt-8 md:pt-12 bg-white/50 gap-10 md:gap-24  ">
+                <div class="flex flex-col items-start md:gap-2 
+                ">
+                    <div class="flex flex-row justify-center w-full md:w-auto  ">
+                        @livewire('main.logo-first', ['active_css' => 'w-full md:w-[120px] hover:shadow-black/60 hover:shadow-lg hover:opacity-90 '])
                     </div>
-                    <div class="text-md font-bold text-sky-800 pb-3">{{ config('app.name') }}</div>
+                    <div
+                        class=" w-full md:w-auto text-center md:text-left
+                    text-2xl md:text-md font-bold text-sky-800 py-3">
+                        {{ config('app.name') }}</div>
                     <div class="flex flex-col items-start text-md">
-                        <div class="text-sm font-italic" >E-mail:</div>
-                        {{ config('app.emailcontato') }}  </div>
-                    <div class="flex flex-col items-start p-0">
-                        <div class="text-sm font-italic" >Whatsapp:</div> 
-                        {{ config('app.celularcontato') }}</div>
+                        <div class="text-sm font-italic">E-mail:</div>
+                        <div class="text-xl font-semibold text-sky-700">{{ config('app.emailcontato') }}</div>
+                    </div>
+                    <div class="flex flex-col items-start p-0 pt-3">
+                        <div class="text-sm font-italic">Whatsapp:</div>
+                        <div class="text-xl font-semibold text-sky-700">{{ config('app.celularcontato') }}</div>
+                    </div>
                 </div>
-                
-                <div class="flex flex-col items-start ">
-                    <div class="text-2xl font-bold text-sky-900 pb-3">Serviços</div>
+
+                <div
+                    class="flex flex-col items-start 
+                border-gray-400 border-t-4 md:border-0 pt-4 md:p-0">
+                    <div class="text-2xl font-bold text-sky-900 pb-3">Serviços Disponíveis</div>
                     <div>
-                        <ul class="list-disc">
+                        <ul class="pl-6 list-disc leading-7 font-light font-italic">
                             <li>SEO</li>
                             <li>Criação</li>
+                            <li>Design</li>
+                            <li>Formulários</li>
+                            <li>Hospedagem</li>
+                            <li>Integração completa</li>
                             <li>Marketing</li>
                             <li>Manutenção</li>
-                            <li></li>
-                            <li></li>
+                            <li>Suporte técnico</li>
+                            <li>Outros serviços consulte-nos </li>
                         </ul>
                     </div>
                 </div>
-                <div class="flex flex-col items-start">Serviços</div>
+                <div
+                    class="flex flex-col items-start 
+                border-gray-400 border-t-4 md:border-0 pt-4 md:p-0">
+                    <div class="text-2xl font-bold text-sky-900 pb-3">Visibilidade do Site</div>
+                    <div class="">
+                        <ul class="pl-6 list-disc leading-9 font-light font-italic">
+                            <li>Visibilidade Online:</li>
+                            <li>Credibilidade e Profissionalismo</li>
+                            <li>Acesso Global</li>
+                            <li>Marketing e Promoção:</li>
+                            <li>Facilidade de Acesso às Informações</li>
+                            <li>Interação e Engajamento</li>
+                            <li>Vendas Online (se aplicável)</li>
+                            <li>Análise e Insights</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div>
-                
+
             </div>
         </div>
 
         <div class="px-4 flex flex-row justify-center w-full py-1 font-black text-xs text-gray-900 bg-black/20 ">
-            {{ config('app.name') }}  - Copyright <span>
-                
-            </span> 2022
+            {{ config('app.name') }} - Copyright <span class="px-2"> © </span> 2020
         </div>
     </div>
 
