@@ -26,6 +26,23 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        .svg1 {
+            color: rgba(0, 80, 146, 0.727);
+        }
+
+        .svg2 {
+            color: rgba(213, 96, 0, 0.727);
+        }
+
+        .svg3 {
+            color: rgba(26, 112, 0, 0.727);
+        }
+
+
+        .svg4 {
+            color: rgba(151, 0, 88, 0.727);
+        }
     </style>
 </head>
 
@@ -61,25 +78,28 @@
                         @endif
                     @endauth
                 @endif
-
-
             </div>
         </div>
+        
         <div id="advantages" class=" md:px-6 py-0 flex flex-col w-full overflow-y-auto ">
             <div id="home" class="hidden w-full imgSlogan px-4 md:px-0">
                 <div class="flex flex-col  h-[360px] md:h-[540px]">
-                    <div class="mt-10 md:ml-4 lg:w-2/3 p-8 text-xl md:text-2xl 
+                    <div
+                        class="mt-10 md:ml-4 lg:w-2/3 p-8 text-xl md:text-2xl 
                     bg-black/50 text-white rounded-lg">
-                    Desperte Seu Negócio Online:
+                        Desperte Seu Negócio Online:
                         <br><span class="text-base md:text-lg">Invista em um Site e Alcance Novos Horizontes!</span>
                     </div>
                     <div class=" flex flex-row justify-end w-full">
-                        <div class="mt-4 md:mt-10 ml-4 text-right mr-0 p-4  md:p-8 
+                        <div
+                            class="mt-4 md:mt-10 ml-4 text-right mr-0 p-4  md:p-8 
                         text-xl md:text-3xl bg-black/50 text-white rounded-lg">
                             Seu Sucesso Começa Agora:
-                            <br><span class="text-base md:text-xl">Abrace a Mudança e Garanta Sua Relevância Online com um Novo
+                            <br><span class="text-base md:text-xl">Abrace a Mudança e Garanta Sua Relevância Online com
+                                um Novo
                                 Site!</span>
-                            <p class="hidden md:block text-lg">O mundo dos negócios está em constante evolução, e a presença online é
+                            <p class="hidden md:block text-lg">O mundo dos negócios está em constante evolução, e a
+                                presença online é
                                 mais crucial do que nunca. Seja para expandir seu alcance, aumentar suas vendas ou
                                 fortalecer sua marca, a necessidade de um site atualizado é inegável. Sua empresa merece
                                 estar na vanguarda da internet, cativando clientes e destacando-se da concorrência. Com
@@ -93,8 +113,13 @@
 
                 </div>
             </div>
-            <div class=" px-4 py-6 flex flex-col md:grid md:grid-cols-4 md:items-stretch  bg-white/30 rounded-md">
-                <div class=" hidden p-3 flex flex-col items-start   ">
+
+            <div
+                class=" px-4 py-2 md:py-6 mb-2 flex flex-col 
+                md:grid md:grid-cols-4 md:items-stretch bg-white/30 rounded-md
+                
+                ">
+                <div class="hidden p-3 flex flex-col items-start   ">
                     <div class=" flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -103,9 +128,10 @@
                                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM13.5 10.5h-6" />
                             </svg>
                         </div>
-                        <div class="text-lg font-bold">Design e Usabilidade:</div>
+                        <div class="text-lg font-bold pt-1">Design e Usabilidade:</div>
                     </div>
-                    <div class="text-sm">O aspecto visual e funcional do site é crucial para atrair e reter
+                    <div class="text-sm line-clamp-2 md:line-clamp-none">O aspecto visual e funcional do site é crucial
+                        para atrair e reter
                         usuários. Isso inclui a interface do usuário (UI), que se concentra na aparência estética do
                         site, e a experiência do usuário (UX), que se preocupa com a facilidade de uso e a interação
                         intuitiva. Um design responsivo, que se adapte a diferentes dispositivos, e uma navegação
@@ -113,18 +139,19 @@
                     </div>
                 </div>
 
-                <div class=" hidden p-3 flex flex-col items-start  md:border-l-2 ">
+                <div class="hidden  p-3 flex flex-col items-start  md:border-l-2 ">
                     <div class=" flex flex-row items-start ">
-                        <div class="pr-1">
+                        <div class="pr-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-8 h-8 svg1">
+                                stroke-width="1.5" stroke="currentColor" class="w-8 h-8 svg4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM13.5 10.5h-6" />
+                                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                             </svg>
                         </div>
-                        <div class="text-lg font-bold">Segurança:</div>
+                        <div class="text-lg font-bold pt-1">Segurança:</div>
                     </div>
-                    <div class="text-sm">A segurança é um aspecto crucial para qualquer site. Isso envolve a
+                    <div class="text-sm line-clamp-2 md:line-clamp-none">A segurança é um aspecto crucial para qualquer
+                        site. Isso envolve a
                         implementação de medidas para proteger os dados dos usuários, prevenir ataques cibernéticos,
                         como hacks e phishing, garantir a integridade do site e oferecer uma experiência segura para os
                         visitantes. Isso inclui a utilização de certificados SSL para criptografar dados, atualizações
@@ -133,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class=" hidden p-3 flex flex-col items-start md:border-l-2 ">
+                <div class="hidden  p-3 flex flex-col items-start md:border-l-2 ">
                     <div class="flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -142,17 +169,18 @@
                                     d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                             </svg>
                         </div>
-                        <div class="text-lg  font-bold">Desenvolvimento e Performance:</div>
+                        <div class="text-lg font-bold pt-1">Desenvolvimento:</div>
                     </div>
                     <div>
-                        <div class="text-sm">A construção técnica do site é vital para sua eficiência. Isso envolve
+                        <div class="text-sm line-clamp-2 md:line-clamp-none">A construção técnica do site é vital para
+                            sua eficiência. Isso envolve
                             a codificação, a escolha adequada de tecnologias, o gerenciamento de banco de dados e a
                             otimização do desempenho. Um site rápido, seguro e confiável é fundamental para manter
                             os visitantes engajados.</div>
                     </div>
                 </div>
 
-                <div class=" hidden p-3 flex flex-col items-start  md:border-l-2 ">
+                <div class="hidden  p-3 flex flex-col items-start  md:border-l-2 ">
                     <div class="flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -161,10 +189,11 @@
                                     d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
                             </svg>
                         </div>
-                        <div class="text-lg  font-bold">Conteúdo e SEO:
+                        <div class="text-lg font-bold pt-1">Conteúdo e SEO:
                         </div>
                     </div>
-                    <div class="text-sm">O conteúdo do site, incluindo textos, imagens, vídeos e outros
+                    <div class="text-sm line-clamp-2 md:line-clamp-none">O conteúdo do site, incluindo textos, imagens,
+                        vídeos e outros
                         elementos,
                         desempenha um papel crucial na atração de tráfego e na retenção de usuários. Além disso,
                         garantir que o site seja facilmente encontrado nos mecanismos de busca é essencial para
@@ -175,32 +204,34 @@
                 </div>
             </div>
 
-            <div class="px-4 flex flex-row w-full pt-4 x-transition">
-                <h3 id="project" class="text-2xl font-bold">Projetos</h3>
+            <div class="flex flex-col w-full mt-6 pb-4 x-transition">
+                <h3 id="project"
+                    class="w-full text-right text-2xl font-bold text-shy-100/40
+                bg-gradient-to-r from-cyan-100/0 to-cyan-100/40 px-8 rounded-t-xl">
+                    Projetos</h3>
+                <div class="h-2 bg-gradient-to-r from-cyan-100/0 to-blue-950/90 "></div>
             </div>
 
-            <div class="hidden px-4 flex flex-row w-full justify-between gap-4 pt-4">
-
-                <div class="flex flex-col  ">
-                    <div>
-                        <img src="{{ Vite::imgurl('reuniao2.jpg') }}" alt="" class="w-[30%]">
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <div>
-                        <img src="{{ Vite::imgurl('desenvolvimento-site.jpg') }}" alt="">
-                    </div>
-                    <br>
-
+            <div class="hidden pb-4 flex flex-row w-full justify-between gap-4 ">
+                <div class="w-4/6 bg-gray-300">
+                    <video controls>
+                        <source src="{{ Vite::videourl('Projetos_.mp4') }}" type="video/mp4">
+                    </video>
                 </div>
 
+                <div class="w-2/6 overflow-hidden ">
+                    <img src="{{ Vite::imgurl('desenvolvimento-site.jpg') }}" alt="" class="h-full">
+                </div>
             </div>
 
-            <div class="px-4 flex flex-col w-full pt-4 x-transition">
-                <h3 class="text-2xl font-bold">Planos</h3>
-                <div id="plans"></div>
+            <div class=" flex flex-col w-full pt-4 x-transition">
+                <h3 id="plans"
+                    class="w-full text-2xl font-bold text-shy-100/40
+                bg-gradient-to-r from-cyan-100/40 to-cyan-100/0 px-8 rounded-t-xl">
+                    Planos</h3>
+                <div class="h-2 bg-gradient-to-r from-blue-950/90 to-cyan-100/0 "></div>
             </div>
-            <div x-show="plansX" class="hidden flex flex-row w-full gap-6 p-4 ">
+            <div x-show="plansX-9" class=" flex flex-row w-full gap-6 py-4 mb-6 pb-1 ">
                 <div
                     class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
                 hover:shadow-white/70 shadow-lg
@@ -288,13 +319,22 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 flex flex-row w-full pt-4 x-transition">
-                <br>
-                <hr>
-                <h3 id="contact" class="text-2xl font-bold">Contato</h3>
-                <div>
-                    <form action="">
-                    </form>
+
+
+            <div class=" flex flex-col w-full pt-4 x-transition">
+                <h3 id="contact"
+                    class="w-full text-right text-2xl font-bold text-shy-100/40
+                bg-gradient-to-r from-cyan-100/0 to-cyan-100/40 px-8 rounded-t-xl">
+                    Contato</h3>
+                <div class="h-2 bg-gradient-to-r from-cyan-100/0 to-blue-950/90 "></div>
+            </div>
+            <div class="flex flex-row w-full gap-6 p-4 ">
+                <div class="w-3/5 overflow-hidden">
+                    <img src="{{ Vite::imgurl('reuniao2.jpg') }}" alt="" class="h-full">
+                </div>
+                <div class="px-4 flex flex-row w-full pt-4 x-transition">
+                    Contato formulário
+                    formul
                 </div>
             </div>
 
