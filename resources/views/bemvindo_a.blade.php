@@ -82,7 +82,70 @@
         </div>
         
         <div id="advantages" class=" md:px-6 py-0 flex flex-col w-full overflow-y-auto ">
-            <div id="home" class="hidden w-full imgSlogan px-4 md:px-0">
+            
+                    <div class="flex flex-row w-full gap-6 p-4 ">
+                        <div class="hidden md:flex md:flex-col w-3/5 overflow-hidden  rounded-md">
+                            <img src="{{ Vite::imgurl('reuniao2.jpg') }}" alt="" class="w-full object-cover r-0">
+                        </div>
+            
+                        <div class="px-4 py-6 flex flex-col w-full md:w-2/5 bg-white/50 rounded-md">
+                           <h3 class="w-full py-4 mb-4 text-2xl font-bold text-center border-b-4 border-gray-400">Formulário</h3>
+                            <div class="w-full py-2">
+                                <x-input-label for="sector" value="Setor" />
+                                <x-select-search
+                                type="text"
+                                name="sector"
+                                id="sector"
+                                class="w-full"
+                                searchable="search"
+                                :items="[]"
+                                />
+                            </div>
+                            <div class="w-full py-2">
+                                <x-input-label for="name" value="Nome" />
+                                <x-text-input 
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="w-full"
+                                />
+                            </div>
+                            <div class="w-full py-2">
+                                <x-input-label for="email" value="E-mail" />
+                                <x-text-input 
+                                type="text"
+                                name="email"
+                                id="email"
+                                class="w-full"
+                                />
+                            </div>
+                            <div class="w-full py-2">
+                                <x-input-label for="phone" value="Celular" />
+                                <x-text-input 
+                                type="text"
+                                name="phone"
+                                id="phone"
+                                class="w-full"
+                                />
+                            </div>
+                            <div class="w-full py-2">
+                                <x-buttons-makes 
+                                disabled="false"
+                                type="submit"
+                                hint="primary"
+                                name="Enviar" 
+                                class="w-full"
+                                >Enviar</x-buttons-makes>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+            
+            
+            
+            
+            <div id="home" class=" w-full imgSlogan px-4 md:px-0">
                 <div class="flex flex-col  h-[360px] md:h-[540px]">
                     <div
                         class="mt-10 md:ml-4 lg:w-2/3 p-8 text-xl md:text-2xl 
@@ -119,7 +182,7 @@
                 md:grid md:grid-cols-4 md:items-stretch bg-white/30 rounded-md
                 
                 ">
-                <div class="hidden p-3 flex flex-col items-start   ">
+                <div class=" p-3 flex flex-col items-start   ">
                     <div class=" flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -139,7 +202,7 @@
                     </div>
                 </div>
 
-                <div class="hidden  p-3 flex flex-col items-start  md:border-l-2 ">
+                <div class="  p-3 flex flex-col items-start  md:border-l-2 ">
                     <div class=" flex flex-row items-start ">
                         <div class="pr-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -160,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="hidden  p-3 flex flex-col items-start md:border-l-2 ">
+                <div class="  p-3 flex flex-col items-start md:border-l-2 ">
                     <div class="flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -180,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class="hidden  p-3 flex flex-col items-start  md:border-l-2 ">
+                <div class="  p-3 flex flex-col items-start  md:border-l-2 ">
                     <div class="flex flex-row items-start ">
                         <div class="pr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -204,15 +267,15 @@
                 </div>
             </div>
 
-            <div class="flex flex-col w-full mt-6 pb-4 x-transition">
+            <div class="flex flex-col w-full mt-6 pb-4 x-transition p-4 md:p-0">
                 <h3 id="project"
                     class="w-full text-right text-2xl font-bold text-shy-100/40
                 bg-gradient-to-r from-cyan-100/0 to-cyan-100/40 px-8 rounded-t-xl">
-                    Projetos</h3>
-                <div class="h-2 bg-gradient-to-r from-cyan-100/0 to-blue-950/90 "></div>
+                    Planejamentos</h3>
+                <div class="h-2 bg-gradient-to-r from-cyan-100/0 to-blue-950/60 "></div>
             </div>
 
-            <div class="hidden pb-4 flex flex-row w-full justify-between gap-4 ">
+            <div class=" pb-4 flex flex-row w-full justify-between gap-4 ">
                 <div class="w-4/6 bg-gray-300">
                     <video controls>
                         <source src="{{ Vite::videourl('Projetos_.mp4') }}" type="video/mp4">
@@ -224,14 +287,14 @@
                 </div>
             </div>
 
-            <div class=" flex flex-col w-full pt-4 x-transition">
+            <div class=" flex flex-col w-full pt-4 x-transition p-4 md:p-0">
                 <h3 id="plans"
                     class="w-full text-2xl font-bold text-shy-100/40
                 bg-gradient-to-r from-cyan-100/40 to-cyan-100/0 px-8 rounded-t-xl">
                     Planos</h3>
-                <div class="h-2 bg-gradient-to-r from-blue-950/90 to-cyan-100/0 "></div>
+                <div class="h-2 bg-gradient-to-r from-blue-950/60 to-cyan-100/0 "></div>
             </div>
-            <div x-show="plansX-9" class=" flex flex-row w-full gap-6 py-4 mb-6 pb-1 ">
+            <div x-show="plansX" class=" flex flex-row w-full gap-6 py-4 mb-6 pb-1 ">
                 <div
                     class="flex flex-col justify-between bg-white/20 w-1/3 p-3 
                 hover:shadow-white/70 shadow-lg
@@ -321,22 +384,14 @@
             </div>
 
 
-            <div class=" flex flex-col w-full pt-4 x-transition">
+            <div class=" flex flex-col w-full pt-4 x-transition p-4 md:p-0">
                 <h3 id="contact"
                     class="w-full text-right text-2xl font-bold text-shy-100/40
                 bg-gradient-to-r from-cyan-100/0 to-cyan-100/40 px-8 rounded-t-xl">
                     Contato</h3>
-                <div class="h-2 bg-gradient-to-r from-cyan-100/0 to-blue-950/90 "></div>
+                <div class="h-2 bg-gradient-to-r from-cyan-100/0 to-blue-950/60 "></div>
             </div>
-            <div class="flex flex-row w-full gap-6 p-4 ">
-                <div class="w-3/5 overflow-hidden">
-                    <img src="{{ Vite::imgurl('reuniao2.jpg') }}" alt="" class="h-full">
-                </div>
-                <div class="px-4 flex flex-row w-full pt-4 x-transition">
-                    Contato formulário
-                    formul
-                </div>
-            </div>
+            
 
             <div
                 class="px-4 md:px-12 flex flex-col lg:flex-row justify-center 
@@ -368,8 +423,8 @@
                         <ul class="pl-6 list-disc leading-7 font-light font-italic">
                             <li>SEO</li>
                             <li>Criação</li>
+                            <li>Consultoria</li>
                             <li>Design</li>
-                            <li>Formulários</li>
                             <li>Hospedagem</li>
                             <li>Integração completa</li>
                             <li>Marketing</li>

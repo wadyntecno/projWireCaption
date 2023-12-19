@@ -12,4 +12,9 @@ class BemVindo extends Controller
 
         return view('bemvindo_a', compact('title'));
     }
+
+    public function save()
+    {
+
+    }
 }

@@ -10,9 +10,9 @@ class LogoFirst extends Component
     public $logourl = 'http://localhost';
     public $namefirst = 'Negócios Promissores';
     public $active_css = 'h-auto rounded-sm ';
+
     public function render()
     {
-
         return view('livewire.main.logo-first');
     }
 }
